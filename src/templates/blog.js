@@ -10,7 +10,7 @@ export default ({ data }) => {
     <Helmet>
         <body className="body-light" />
     </Helmet>
-    <div className="w-max-width w-700">
+    <div className="w-max-width w-800">
       <div className="mb-md">
         <h1 className="mb-0">
           {blog.frontmatter.title}
