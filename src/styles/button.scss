@@ -1,0 +1,14 @@
+.btn {
+  padding: em(8) em(15);
+}
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+}
+.btn-primary-outline {
+  border: 1px solid $primary;
+}
+
+.btn-rad {
+  border-radius: 5px;
+}

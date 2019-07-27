@@ -1,0 +1,47 @@
+// Bring in Montserrat from Google fonts.
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import './variables';
+@import './helper';
+@import 'global';
+@import 'layout';
+@import 'typography';
+@import 'header';
+@import 'button';
+
+
+.anime-rotate-border {
+  border: 1px dashed #2e3131;
+  border-radius: 5px;
+}
+.circle {
+  position: relative;
+  padding: 5px;
+  margin: 0 40px 0 0;
+}
+.circle__animating {
+  position: absolute;
+  height: 40px; width: 40px;
+  border-radius: 50%;
+  border: 1px dashed $text-color;
+
+}
+.circle__icon {
+  position: absolute;
+  height: 40px; width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 8px;
+  background-color: lighten($bg-color, 3%);
+}
+.circle__link {
+  color: $primary;
+  transition: color .3s linear;
+
+  &:hover {
+    text-decoration: none;
+    color: darken($primary, 20%);
+    box-shadow: none;
+    transition: color .5s ease-in-out;
+  }
+}
+

@@ -1,0 +1,27 @@
+/*
+* Fix for 100% height not effective on Elements
+* Especially the juciy centering of flex content.
+*/
+html, body, #___gatsby {
+  height: 100%;
+}
+
+div[role="group"][tabindex] {
+  height: 100%;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $text-color;
+}
+
+@media screen and (max-width: 762px) {
+  body {
+    font-size: 17px;
+  }
+}

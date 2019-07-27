@@ -1,0 +1,25 @@
+.text-primary {
+  color: $primary;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-justify {
+  text-align: justify;
+}
+.small {
+  font-size: .7em;
+}
+.hero {
+  font-size: 1.8rem;
+  font-family: Montserrat, "Alegreya Sans";
+  font-weight: 700;
+  margin: 5px 0;
+}
+.hero-alt {
+  color: $text-color-alt;
+  padding: 10px 10px 10px 0;
+  border-top: 1px solid $text-color-alt;
+  border-bottom: 1px solid $text-color-alt;
+  display: inline-block;
+}

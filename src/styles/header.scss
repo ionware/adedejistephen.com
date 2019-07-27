@@ -1,0 +1,21 @@
+.header {
+  padding: em(10) em(20);
+}
+
+.nav-list {
+  display: inline-block;
+  margin-left: auto;
+}
+.nav-list__item {
+  display: inline-block;
+  margin: 0 em(20);
+}
+.nav-list__link {
+  color: $primary;
+  font-weight: bold;
+  &:hover {
+    color: $primary;
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
