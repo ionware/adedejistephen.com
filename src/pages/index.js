@@ -1,20 +1,14 @@
 import React, { createRef } from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Icons from '../components/Icons'
+import Header from '../components/Header'
 import imgSrc from '../assets/adedeji.png'
 import Animate from '../components/Animate'
 
 export default ({ data }) => {
     return (
       <React.Fragment>
-        <header className="header">
-          <nav className="flex justify-content-end">
-            <ul className="nav-list">
-              <li className="nav-list__item"><a href="#" className="nav-list__link">Blog</a></li>
-              <li className="nav-list__item"><a href="/resume.pdf" className="nav-list__link btn btn-primary-outline btn-rad">Resume</a></li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
         <div className="w-max-width mt-md">
           <main className="flex flex-info justify-content-center align-items-center align-content-center">
             <Animate duration={1000} easing='linear' opacity={[0, 1]} delay={3000}>
