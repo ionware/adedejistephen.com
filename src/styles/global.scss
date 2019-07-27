@@ -14,6 +14,11 @@ body {
   background: $bg-color;
   color: $text-color;
 }
+.body-light {
+  background: #fafafa;
+  color: $gray;
+  min-height: 100%;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: $text-color;
@@ -23,4 +28,9 @@ h1, h2, h3, h4, h5, h6 {
   body {
     font-size: 17px;
   }
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }

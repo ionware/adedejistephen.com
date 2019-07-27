@@ -4,11 +4,25 @@
 .text-uppercase {
   text-transform: uppercase;
 }
+.text-lowercase {
+  text-transform: lowercase;
+}
 .text-justify {
   text-align: justify;
 }
+.text-center {
+  text-align: center;
+}
 .small {
   font-size: .7em;
+}
+.link__nodeco {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+    box-shadow: none;
+    color: inherit;
+  }
 }
 .hero {
   font-size: 1.8em;

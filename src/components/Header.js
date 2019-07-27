@@ -17,9 +17,11 @@ export default function Header({ showAvatar }) {
     <header className="header">
       <nav className="flex justify-content-end">
         { showAvatar 
-        && <img src={selfImg} 
-            alt={data.site.siteMetadata.title} 
-            className="avatar"/>
+        && <Link to={'/'} className="link__nodeco">
+            <img src={selfImg} 
+              alt={data.site.siteMetadata.title} 
+              className="avatar"/>
+        </Link>
         }
         <ul className="nav-list">
           <li className="nav-list__item">
