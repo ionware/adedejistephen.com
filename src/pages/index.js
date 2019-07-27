@@ -15,7 +15,7 @@ export default ({ data }) => {
             </ul>
           </nav>
         </header>
-        <div className="w-max-width">
+        <div className="w-max-width mt-md">
           <main className="flex flex-info justify-content-center align-items-center align-content-center">
             <Animate duration={1000} easing='linear' opacity={[0, 1]} delay={3000}>
               <img src={imgSrc} alt="Adedeji Stephen" className="flex-info__image" ref={ createRef() }/>
