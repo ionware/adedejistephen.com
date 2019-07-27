@@ -11,7 +11,7 @@
   font-size: .7em;
 }
 .hero {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-family: Montserrat, "Alegreya Sans";
   font-weight: 700;
   margin: 5px 0;
@@ -22,4 +22,9 @@
   border-top: 1px solid $text-color-alt;
   border-bottom: 1px solid $text-color-alt;
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    font-size: 1.5em;
+  }
 }

@@ -8,7 +8,7 @@ export default class RotatingIconLink extends React.Component {
       targets: this.node,
       rotateZ: 360,
       easing: 'linear',
-      duration: 8000,
+      duration: 10000,
       loop: true,
     })
   }

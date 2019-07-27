@@ -1,8 +1,7 @@
 
-
-
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .justify-content-center {
   justify-content: center;
@@ -30,6 +29,19 @@
   margin-left: 10px;
   padding: 0 10px;
   max-width: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    justify-content: flex-end;
+  }
+  .flex-info__info {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .flex-info__image {
+    margin-right: 50px;
+  }
 }
 
 .w-max-width {

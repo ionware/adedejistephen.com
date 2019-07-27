@@ -33,6 +33,11 @@
   padding-top: 8px;
   background-color: lighten($bg-color, 3%);
 }
+@media screen and (max-width: 768px) {
+  .circle__icon {
+    padding-top: 10px;
+  }
+}
 .circle__link {
   color: $primary;
   transition: color .3s linear;
