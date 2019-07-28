@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: 'Adedeji Stephen',
-    bioExcerpt: `Lorem ipsum dolor sit amet, ipsum euripidis intellegebat vis ea, prodesset adolescens ad cum. Dicta omnes suscipit vix cu. Virtute meliore facilis eam.`,
+    url: 'http://adedejistephen.com',
+    bioExcerpt: `I'm a Fullstack Software Engineer from Nigeria. I make functional web applications on LAMP and MERN stack, and I have a love for solving problems.`,
     socials: {
       twitter: 'https://twitter.com/ionwarez',
       github: 'https://github.com/ionware',
-      facebook: 'https://facebook.com/ionware',
-      linkedin: 'https://linkedin.com/m/ionware'
+      facebook: 'https://facebook.com/pythonleet',
+      linkedin: 'www.linkedin.com/in/ionware'
     }
   },
   plugins: [
