@@ -37,6 +37,19 @@ module.exports = {
           }
         ],
       }
-    }
-  ],
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Adedeji Stephen',
+        short_name: 'Adedeji Stephen',
+        start_url: '/',
+        background_color: '#000',
+        theme_color: '#1DD1A1',
+        icon: 'static/icon.png',
+        display: 'standalone'
+      }
+    },
+    'gatsby-plugin-offline',
+  ]
 }

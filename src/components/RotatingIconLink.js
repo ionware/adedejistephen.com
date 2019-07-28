@@ -19,7 +19,12 @@ export default class RotatingIconLink extends React.Component {
       <span className='circle'>
         <span className='circle__animating' ref={ref => this.node = ref}></span>
         <span className="circle__icon">
-          <a href={to} target="_blank" className='circle__link'>{ children }</a>
+          <a href={to} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className='circle__link'>
+            { children }
+          </a>
           </span>
       </span>
     )

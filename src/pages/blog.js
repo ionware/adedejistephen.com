@@ -1,15 +1,18 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Header from '../components/Header'
-import { Helmet } from 'react-helmet'
+import Meta from '../components/Metadata'
 import Animate from '../components/Animate'
 
 export default ({ data }) => {
+  const site = data.site.siteMetadata
   return (
     <React.Fragment>
-      <Helmet>
+      <Meta>
+        <title>{ site.title } &mdash; Blog</title>
+        <meta name="description" content={`${site.bioExcerpt}`} />
         <body className="body-light" />
-      </Helmet>
+      </Meta>
       <Header showAvatar={true} />
       <div className="w-max-width w-800">
         <div className="flex justify-content-center">
@@ -64,6 +67,12 @@ export const query = graphql`
           excerpt,
           timeToRead
         }
+      }
+    },
+    site {
+      siteMetadata {
+        title,
+        bioExcerpt
       }
     }
   }

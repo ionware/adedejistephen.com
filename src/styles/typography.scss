@@ -24,6 +24,14 @@
     color: inherit;
   }
 }
+.link__primary {
+  color: $primary;
+  &:hover {
+    text-decoration: none;
+    box-shadow: none;
+    color: $primary;
+  }
+}
 .hero {
   font-size: 1.8em;
   font-family: Montserrat, "Alegreya Sans";

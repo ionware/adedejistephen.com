@@ -1,13 +1,19 @@
 import React, { createRef } from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 import Icons from '../components/Icons'
 import Header from '../components/Header'
+import Meta from '../components/Metadata'
 import imgSrc from '../assets/adedeji.png'
 import Animate from '../components/Animate'
 
 export default ({ data }) => {
+  const site = data.site.siteMetadata
     return (
       <React.Fragment>
+        <Meta>
+          <title>{ site.title } &mdash; Software Engineer</title>
+          <meta name="description" content={`${site.bioExcerpt}`} />
+        </Meta>
         <Header />
         <div className="w-max-width mt-md">
           <main className="flex flex-info justify-content-center align-items-center align-content-center">
