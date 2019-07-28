@@ -25,6 +25,7 @@ module.exports = {
         path: `${__dirname}/src/pages`
       }
     },
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -33,6 +34,12 @@ module.exports = {
             resolve: 'gatsby-remark-prismjs',
             options: {
               
+            }
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 790,
             }
           }
         ],
