@@ -5,9 +5,13 @@ import Header from '../components/Header'
 
 export default ({ data }) => {
   const blog = data.markdownRemark
+  const url = data.site.siteMetadata.url
   return (
     <React.Fragment>
       <Meta>
+        <meta property="og:title" content={blog.frontmatter.title} />
+        <meta property="og:description" content={blog.excerpt} />
+        <meta property="og:url" content={`${url}/${blog.fields.slug}`} />
         <title>{blog.frontmatter.title}</title>
         <meta name="description" content={blog.excerpt}/>
         <body className="body-light" />
@@ -48,8 +52,16 @@ export const query = graphql`
         title,
         date(formatString: "DD MMMM, YYYY")
       },
+      fields {
+        slug
+      },
       excerpt,
       timeToRead
+    },
+    site {
+      siteMetadata {
+        url
+      }
     }
   }
 `

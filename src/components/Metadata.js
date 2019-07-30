@@ -20,7 +20,7 @@ export default ({ children }) => {
       <html lang="en" />
       <meta property="og:title" content={_.title} />
       <meta property="og:description" content={_.bioExcerpt} />
-      <meta property="og:image" content="/icon.png" />
+      <meta property="og:image" content={`${_.url}/icon.png`} />
       <meta property="og:url" content={_.url} />
       <meta property="og:site_name" content={_.title} />
       <link rel="apple-touch-icon" href="/apple.png"/>

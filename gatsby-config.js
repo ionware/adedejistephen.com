@@ -2,12 +2,12 @@ module.exports = {
   siteMetadata: {
     title: 'Adedeji Stephen',
     url: 'http://adedejistephen.com',
-    bioExcerpt: `I'm a Fullstack Software Engineer from Nigeria. I make functional web applications on LAMP and MERN stack, and I have a love for solving problems.`,
+    bioExcerpt: `I'm a Fullstack Software Engineer from Nigeria. I make functional web applications on LAMP and MERN stack, and I have keen interest in solving problems.`,
     socials: {
       twitter: 'https://twitter.com/ionwarez',
       github: 'https://github.com/ionware',
       facebook: 'https://facebook.com/pythonleet',
-      linkedin: 'www.linkedin.com/in/ionware'
+      linkedin: 'http://linkedin.com/in/ionware',
     }
   },
   plugins: [
